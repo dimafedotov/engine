@@ -24,6 +24,10 @@ engine_start()
     FILE *f = fopen("config.edn", "r");
     // read
     fclose(f);
+
+    ng.scene.vertices[0] = {-5.0, 0.0, -4.0};
+    ng.scene.vertices[1] = {5.0, 0.0, -4.0};
+    ng.scene.vertices[2] = {0.0, 0.0, 6.0};
 }
 
 void
