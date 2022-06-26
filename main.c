@@ -22,9 +22,17 @@ engine_start()
     // read
     fclose(f);
 
-    ng.scene.vertices[0] = {-5.0, 0.0, -4.0};
-    ng.scene.vertices[1] = {5.0, 0.0, -4.0};
-    ng.scene.vertices[2] = {0.0, 0.0, 6.0};
+    ng.scene.vertices[0][0] = -5;
+    ng.scene.vertices[0][1] =  0;
+    ng.scene.vertices[0][2] = -4;
+
+    ng.scene.vertices[1][0] =  5;
+    ng.scene.vertices[1][1] =  0;
+    ng.scene.vertices[1][2] = -4;
+
+    ng.scene.vertices[2][0] =  0;
+    ng.scene.vertices[2][1] =  0;
+    ng.scene.vertices[2][2] =  6;
 }
 
 void
