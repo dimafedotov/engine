@@ -3,6 +3,7 @@
 
 #include "engine.h"
 #include "space.h"
+#include "parser.h"
 
 #define ENGINE_ON 1
 #define ENGINE_OFF -1
@@ -82,6 +83,15 @@ main(void)
     space_init(&space);
 
     engine_start();
+
+    char *script_name = "../data/main.edn";
+
+    int result = parse(script_name);
+
+    if (result == PARSER_ERROR)
+    {
+        exit(1);
+    }
 
     while (ng.status == ENGINE_ON)
     {
