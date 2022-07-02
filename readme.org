@@ -1,0 +1,16 @@
+#+TITLE: Engine
+#+AUTHOR: Dmitry Fedotov
+
+* Dependencies
+- GLFW 3
+- CMake 3
+
+* Building and start
+
+#+begin_src shell-script :eval no
+cd build
+cmake ..
+cmake --build
+./engine
+#+end_src
+
